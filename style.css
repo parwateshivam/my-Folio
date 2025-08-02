@@ -1,0 +1,127 @@
+/* navbar part */
+
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#header .nav-link {
+  background-color: transparent;
+  position: relative;
+}
+
+#header .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  transition: all .5s ease;
+  background-color: var(--background-light);
+}
+
+#header .nav-link.active::before {
+  width: 100%;
+}
+
+/* hero part */
+
+#hero {
+  background-color: var(--primary-color) !important;
+  color: var(--text-light);
+}
+
+#hero .profile-img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  animation: imageToggle;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes imageToggle {
+  from {
+    transform: translateY(10px);
+  }
+
+  to {
+    transform: translateY(20px);
+  }
+}
+
+#hero .lead {
+  color: var(--background-light);
+  font-size: 1rem;
+  opacity: .5;
+}
+
+/* about section */
+
+#about {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+#about .about-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#about .about-info .about-btn {
+  display: flex;
+  gap: 1rem;
+}
+
+/* experience section */
+
+#experience {
+  background-color: var(--background-dark) !important;
+  position: relative;
+  z-index: -1;
+}
+
+#experience h2 {
+  color: var(--text-light);
+}
+
+.list-group-item .duration {
+  font-size: .8rem;
+  color: var(--text-light);
+  opacity: .7;
+}
+
+.list-group-item .work {
+  font-size: 1rem;
+  opacity: .9;
+}
+
+/* projects section */
+
+#project {
+  background-color: var(--primary-color) !important;
+  position: relative;
+  z-index: -1;
+}
+
+#project h2 {
+  color: var(--text-light);
+}
+
+.card {
+  background-color: var(--background-light);
+}
+
+.card img {
+  height: 200px;
+}
+
+/* footer section */
+
+footer {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}

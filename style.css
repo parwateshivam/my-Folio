@@ -121,10 +121,14 @@
   outline: none;
 }
 
+
 .card .card-body {
   background-color: var(--primary-color) !important;
   color: var(--text-light);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
+
 
 /* contact section */
 

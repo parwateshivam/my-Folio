@@ -76,6 +76,11 @@
   gap: 1rem;
 }
 
+#about .about-info .about-btn .contact-btn a{
+  text-decoration: none;
+  color: var(--text-light);
+}
+
 /* experience section */
 
 #experience {
@@ -102,7 +107,7 @@
 /* projects section */
 
 #project {
-  background-color: var(--primary-color) !important;
+  background-color: var(--background-dark) !important;
   position: relative;
   z-index: -1;
 }
@@ -112,11 +117,20 @@
 }
 
 .card {
-  background-color: var(--background-light);
+  border: none;
+  outline: none;
 }
 
-.card img {
-  height: 200px;
+.card .card-body {
+  background-color: var(--primary-color) !important;
+  color: var(--text-light);
+}
+
+/* contact section */
+
+#contact {
+  background-color: var(--primary-color);
+  color: var(--text-light);
 }
 
 /* footer section */

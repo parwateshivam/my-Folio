@@ -94,7 +94,7 @@
       <div class="container">
         <h2 class="mb-5">About Me</h2>
         <div class="row align-items-center gap-5 gap-md-0">
-          <div class="col-md-6">
+          <div class="col-md-6 order-md-2 ">
             <p>I'm a software engineer with experience in frontend and backend development. I enjoy creating efficient
               and user-friendly applications.</p>
             <div class="about-info">
@@ -127,36 +127,70 @@
     <div class="container-fluid">
       <div class="container">
         <h2 class="mb-5">Experience</h2>
-        <div class="row gap-2 gap-md-0">
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item bg-dark text-white">
-                <h4 class="profile">Intern</h4>
-                <span class="duration">WideSoftech. 2021 - 2022</span>
-                <p class="work">Working as a intern to build responsive web applications using MERN.</p>
-              </li>
-              <li class="list-group-item bg-light text-dark">
-                <h4 class="profile">Junior Web Developer</h4>
-                <span class="duration text-dark">StartUp Ventures. 2022 - 2024</span>
-                <p class="work">Build responsive websites using HTML CSS and JavaScript. Collaborated with UI/UX
-                  disigners.</p>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <ul class="list-group">
-              <li class="list-group-item bg-light text-dark">
-                <h4 class="profile">Full Stack Developer</h4>
-                <span class="duration text-dark">Digital solutions. 2024 - 2025</span>
-                <p class="work">Developed full-stack applications with Node.js, Express, and MongoDB.</p>
-              </li>
-              <li class="list-group-item bg-dark text-white">
-                <h4 class="profile">Senior Web Developer</h4>
-                <span class="duration">TechCrop Inc. Jun 2025 - Present</span>
-                <p class="work">Lead a team of developers to build responsive web applications using React and Next.js.
-                </p>
-              </li>
-            </ul>
+        <div class="row">
+          <div class="col">
+            <div id="accordionExample" class="accordion accordion-flush">
+
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion1">
+                    Intern
+                  </button>
+                </div>
+                <div id="accordion1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span class="duration">WideSoftech. 2021 - 2022</span>
+                    <p class="work">Working as a intern to build responsive web applications using MERN.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button class="accordion-button" data-bs-target="#accordion2" data-bs-toggle="collapse">
+                    Junior Web Developer
+                  </button>
+                </div>
+                <div id="accordion2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span class="duration text-dark">StartUp Ventures. 2022 - 2024</span>
+                    <p class="work">Build responsive websites using HTML CSS and JavaScript. Collaborated with UI/UX
+                      disigners.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button class="accordion-button" data-bs-target="#accordion3" data-bs-toggle="collapse">
+                    Full-stack Developer
+                  </button>
+                </div>
+                <div id="accordion3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span class="duration text-dark">Digital solutions. 2024 - 2025</span>
+                    <p class="work">Developed full-stack applications with Node.js, Express, and MongoDB.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button class="accordion-button" data-bs-target="#accordion4" data-bs-toggle="collapse">
+                    Senior Web Developer
+                  </button>
+                </div>
+                <div id="accordion4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <span class="duration">TechCrop Inc. Jun 2025 - Present</span>
+                    <p class="work">Lead a team of developers to build responsive web applications using React and
+                      Next.js.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
           </div>
         </div>
       </div>
@@ -169,7 +203,6 @@
       <div class="container">
         <h2 class="mb-5">Projects</h2>
         <div class="row">
-
           <div class="col-lg-4 col-md-6 col-12">
             <div class="card mb-4 shadow">
               <img src="./images/projects/folio.jpg" class="img-fluid card-img-top" />
@@ -214,7 +247,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -259,5 +291,11 @@
     </div>
   </footer>
 </body>
-
 </html>
+
+
+
+
+
+
+

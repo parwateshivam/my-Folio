@@ -84,24 +84,19 @@
 /* experience section */
 
 #experience {
-  background-color: var(--background-dark) !important;
-  position: relative;
-  z-index: -1;
+  background-color: var(--primary-color) !important;
 }
 
 #experience h2 {
   color: var(--text-light);
 }
 
-.list-group-item .duration {
-  font-size: .8rem;
-  color: var(--text-light);
-  opacity: .7;
+.accordion .accordion-item .accordion-body .duration {
+  font-size: 0.9rem;
 }
 
-.list-group-item .work {
+.accordion .accordion-item .accordion-body .work {
   font-size: 1rem;
-  opacity: .9;
 }
 
 /* projects section */
